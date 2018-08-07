@@ -1,0 +1,48 @@
+<!--pages/main/main.wxml-->
+
+<view class='body'>
+
+<import src="/iframe/top/top.wxml"/>
+<template is="selector" data="{{selector: selector,index:index}}"/>
+
+<view class='main'>
+
+<view class='block'>
+  <view class='block-title'>
+    <label class='block-title-lable'>
+      <image class='title-icon icon-left' src='/images/pc.png'></image>
+        营业监控
+      </label>
+  </view>
+  <view>
+  
+  </view>
+</view>
+
+<view class='block'>
+  <view class='block-title'>
+    <label class='block-title-lable'>
+      <image class='title-icon icon-left' src='/images/RMB.png'></image>
+        资金收入
+      </label>
+  </view>
+  <view>
+
+  </view>
+</view>
+
+<view class='block'>
+  <view class='block-title'>
+    <label class='block-title-lable'>
+      <image class='title-icon icon-left' src='/images/trend.png'></image>
+        营业走势图
+      </label>
+  </view>
+  <view>
+  
+  </view>
+</view>
+
+</view>
+
+</view>

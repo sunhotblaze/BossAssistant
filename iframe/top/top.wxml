@@ -1,0 +1,31 @@
+<!--iframe/top/top.wxml-->
+<template name="selector">
+<view style='width:100%;' class='top'>
+  <view class="selector">
+    <picker range-key='value' bindchange='bindPickerChange' range="{{selector}}" mode="selector" value='{{index}}'>
+    <view>
+      当前店铺 : {{selector[index].value}}
+      <image src='/images/drop-down.png' class='selector-icon icon-right'></image>
+    </view>
+    </picker>
+  </view>
+ </view>
+</template>
+
+<template name="selectorAndDateSelector">
+<view style='width:100%;' class='top'>
+  <view class="selector">
+    <picker range-key='value' bindchange='bindPickerChange' range="{{selector}}" mode="selector" value='{{index}}'>
+    <view>
+      当前店铺 : {{selector[index].value}}
+      <image src='/images/drop-down.png' class='selector-icon icon-right'></image>
+    </view>
+    </picker>
+    <view class='date-selector'>
+      <view class='float-left {{dateIndex==i ? "active":""}}' wx:for='{{dateSelector}}' wx:for-index='i' data-index='{{i}}' bindtap='click' wx:key='value'>
+        {{item.value}}
+      </view>
+   </view>
+  </view>
+ </view>
+</template>

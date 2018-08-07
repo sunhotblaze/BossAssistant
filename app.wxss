@@ -1,0 +1,47 @@
+/**app.wxss**/
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F5F5F5;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.selector{
+  width: 700rpx;
+  padding: 35rpx;
+  background: #fff;
+  font-family:sans-serif;
+  font-size: 28rpx;
+}
+.date-selector{
+  padding:40rpx 15rpx 30rpx 15rpx;
+}
+.top{
+  position:fixed;
+  top:0rpx;
+}
+.icon-right{
+  float: right;
+}
+.selector-icon{
+  width: 38rpx;
+  height: 38rpx;
+}
+.float-left{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20rpx;
+  float:left;
+}
+.active{
+  border-bottom: 5rpx solid #1296db;
+  color: #1296db;
+}
