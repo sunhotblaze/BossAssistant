@@ -49,7 +49,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("1111");
     this.setData({
       selector: app.globalData.selector,
       index: app.globalData.index
@@ -67,7 +66,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log("main" + this.data.index)
     app.overallAssignmentIndex(this);
   },
 

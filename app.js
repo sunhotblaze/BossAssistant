@@ -47,8 +47,6 @@ App({
     
   },
   overallAssignmentIndex: function (that){
-
-    console.log("app" + that.data.index)
     // 修改选择索引
     if (that.data.index != this.globalData.index){
       that.data.index = this.globalData.index;
