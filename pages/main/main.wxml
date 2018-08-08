@@ -5,40 +5,53 @@
 <import src="/iframe/top/top.wxml"/>
 <template is="selector" data="{{selector: selector,index:index}}"/>
 
-<view class='main'>
+<view class='main main-top'>
 
 <view class='block'>
-  <view class='block-title'>
+  <view class='block-title block-border-bottom'>
     <label class='block-title-lable'>
       <image class='title-icon icon-left' src='/images/pc.png'></image>
         营业监控
       </label>
   </view>
-  <view>
+  <view class='block-body block-border-bottom'>
   
   </view>
 </view>
 
 <view class='block'>
-  <view class='block-title'>
+  <view class='block-title block-border-bottom'>
+    <label class='block-title-lable'>
+      <image class='title-icon icon-left' src='/images/customer.png'></image>
+        客户监控
+      </label>
+  </view>
+  <view class='block-body block-border-bottom'>
+  
+  </view>
+</view>
+
+<view class='block'>
+  <view class='block-title block-border-bottom'>
     <label class='block-title-lable'>
       <image class='title-icon icon-left' src='/images/RMB.png'></image>
         资金收入
       </label>
   </view>
-  <view>
+  <view class='block-body block-border-bottom'>
 
   </view>
 </view>
 
+
 <view class='block'>
-  <view class='block-title'>
+  <view class='block-title block-border-bottom'>
     <label class='block-title-lable'>
       <image class='title-icon icon-left' src='/images/trend.png'></image>
         营业走势图
       </label>
   </view>
-  <view>
+  <view class='block-body block-border-bottom'>
   
   </view>
 </view>

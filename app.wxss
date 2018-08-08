@@ -22,11 +22,12 @@
   font-size: 28rpx;
 }
 .date-selector{
-  padding:40rpx 15rpx 30rpx 15rpx;
+  height:40rpx; 
+  padding-top:40rpx;
 }
 .top{
-  position:fixed;
-  top:0rpx;
+  position:fixed; 
+  top:0;
 }
 .icon-right{
   float: right;
@@ -44,4 +45,45 @@
 .active{
   border-bottom: 5rpx solid #1296db;
   color: #1296db;
+}
+.icon-left{
+  float: left;
+}
+.title-icon{
+  width: 48rpx;
+  height: 48rpx;
+}
+.main{
+ width: 95%;
+}
+.main-top{
+  margin-top: 100rpx;
+}
+.index-top{
+  margin-top: 180rpx;
+}
+.block{
+  margin-top:20rpx;
+  padding: 15rpx;
+  height: 500rpx;
+  background:white;
+  border:1rpx solid #DCDCDC;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  color: #696969;
+  font-family:sans-serif;
+}
+.block-title{
+  padding: 15px;
+}
+.block-border-bottom{
+  border-bottom: 0.5rpx solid #DCDCDC;
+}
+.block-title-lable{
+  font-size: 30rpx;
+  color: #1296db;
+  margin-left: 15rpx;
+}
+.block-body{
+  padding: 20px;
 }

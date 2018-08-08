@@ -2,6 +2,7 @@
   "pages": [
     "pages/main/main",
     "pages/index/index",
+    "pages/my/my",
     "pages/logs/logs",
     "iframe/top/top"
   ],
@@ -27,6 +28,11 @@
       "text":"数据分析",
       "iconPath": "images/data-analysis.png",
       "selectedIconPath": "images/data-analysis-check.png"
+    },{
+      "pagePath":"pages/my/my",
+      "text":"我的",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my-check.png"
     }]
   }
 }

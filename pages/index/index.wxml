@@ -3,7 +3,7 @@
 <view class='body'>
 <import src="/iframe/top/top.wxml"/>
 <template is="selectorAndDateSelector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector}}"/>
-
+<!--
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -16,4 +16,20 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+-->
+<view class='main index-top'>
+<view class='block'>
+  <view class='block-title block-border-bottom'>
+    <label class='block-title-lable'>
+      <image class='title-icon icon-left' src='/images/database.png'></image>
+        数据概要
+      </label>
+  </view>
+  <view class='block-body block-border-bottom'>
+  456
+  </view>
+</view>
+
+</view>
+
 </view>

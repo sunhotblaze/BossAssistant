@@ -4,20 +4,14 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    /*motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),*/
     selector:[],
     index: {},
     dateIndex: {},
     dateSelector: []
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
   },
   onLoad: function () {
 
@@ -27,7 +21,7 @@ Page({
       dateIndex: app.globalData.dateIndex,
       dateSelector: app.globalData.dateSelector
     })
-
+  /*
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -53,16 +47,17 @@ Page({
           })
         }
       })
-    }
+    }*/
   },
-  getUserInfo: function(e) {
+  /*getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  },
+  },*/
+
   /**
    * 生命周期函数--监听页面显示
    */
