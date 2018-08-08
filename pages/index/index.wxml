@@ -17,7 +17,7 @@
   </view>
 </view>
 -->
-<view class='main index-top'>
+<view class='container container-top'>
 <view class='block'>
   <view class='block-title block-border-bottom'>
     <label class='block-title-lable'>
@@ -26,7 +26,28 @@
       </label>
   </view>
   <view class='block-body block-border-bottom'>
-  456
+    <label class='h4'>零销</label>
+    <view class='block-content'>
+      <view class='block-left'>
+        新增
+        <label></label>
+      </view>
+      <view class='block-right'>
+        消费
+      </view>
+    </view>
+  </view>
+  <view class='block-bottom'>
+    <label class='h4'>会员</label>
+    <view class='block-content'>
+      <view class='block-left'>
+        新增
+        <label></label>
+      </view>
+      <view class='block-right'>
+        消费
+      </view>
+    </view>
   </view>
 </view>
 
