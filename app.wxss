@@ -16,8 +16,9 @@
 }
 
 .date-selector{
-  height:40rpx; 
+  height:60rpx; 
   padding-top:40rpx;
+  display: flex;
 }
 .date-change-selector{
   padding-bottom: 40rpx;

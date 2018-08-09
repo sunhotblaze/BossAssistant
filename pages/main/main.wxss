@@ -3,3 +3,15 @@
 .container-top{
   margin-top: 100rpx;
 }
+.content-view{
+ height :auto;
+}
+.lab-title{
+  font-size: 28rpx;
+  color: black;
+  font-weight: 1000;
+}
+.block-body{
+  padding: 15rpx;
+  padding-bottom: 10rpx;
+}
