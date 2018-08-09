@@ -16,8 +16,9 @@
 }
 
 .date-selector{
-  height:40rpx; 
+  height:60rpx; 
   padding-top:40rpx;
+  display: flex;
 }
 
 .top{
@@ -34,10 +35,11 @@
 }
 
 .float-left{
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 20rpx;
+  flex: 1;
+  /* padding-left:5%;
+  padding-right: 5%; */
   float:left;
+  text-align: center;
 }
 
 .active{

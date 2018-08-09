@@ -1,7 +1,7 @@
 /**index.wxss**/
 
 .container-top{
-  margin-top: 180rpx;
+  margin-top: 200rpx;
 }
 
 .block-body{
