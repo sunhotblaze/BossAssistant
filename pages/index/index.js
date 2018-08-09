@@ -71,6 +71,9 @@ Page({
     app.overallBindPickerChange(e);
     app.overallAssignmentIndex(this);
   },
+  /**
+   * 点击时间选择器
+   */
   click:function(e){
     app.overallSelect(e);
     app.overallAssignmentIndex(this);

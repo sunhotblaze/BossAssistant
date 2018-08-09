@@ -3,6 +3,9 @@
 .container-top{
   margin-top: 180rpx;
 }
+.container-change-top{
+  margin-top: 280rpx;
+}
 
 .block-body{
   padding: 30rpx;
@@ -23,12 +26,21 @@
   border-right: 1rpx solid #DCDCDC;
 }
 .block-right{
-  width: 49%;
-  padding-left: 1%;
+  width: 48%;
+  padding-left: 2%;
   float: right;
 }
 .h4{
   font-size: 28rpx;
   font-weight: 1000;
   color: black;
+}
+.custom-date-selector{
+  height: 65rpx;
+}
+.display{
+  display: block;
+}
+.hide{
+  display: none;
 }

@@ -19,11 +19,15 @@
   height:40rpx; 
   padding-top:40rpx;
 }
+.date-change-selector{
+  padding-bottom: 40rpx;
+}
 
 .top{
   position:fixed; 
   top:0;
 }
+
 .icon-right{
   float: right;
 }
@@ -34,10 +38,11 @@
 }
 
 .float-left{
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 20rpx;
+  flex: 1;
+  /* padding-left:5%;
+  padding-right: 5%; */
   float:left;
+  text-align: center;
 }
 
 .active{
@@ -52,6 +57,7 @@
 .title-icon{
   width: 48rpx;
   height: 48rpx;
+  margin-top: -9rpx;
 }
 
 .container{
