@@ -16,63 +16,38 @@ Page({
     endMonth: {}
   },
   /**
-   * 选择器 绑定更改
+   * 店铺选择器 绑定更改
    */
   bindPickerChange:function(e){
     app.overallBindPickerChange(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
   /**
-   * 点击时间选择器
+   * 时间选择器 绑定更改
    */
   clickDateSelector: function (e) {
     app.overallSelect(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
   /**
-  * 开始月份选择器 绑定更改
-  */
+   * 开始月份选择器 绑定更改
+   */
   bindStartMonthChange: function (e) {
     app.orerallBindStartMonthChange(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
   /**
    * 结束月份选择器 绑定更改
    */
   bindEndMonthChange: function (e) {
     app.orerallBindEndMonthChange(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
-  /*scrollTopFun:function(e){
-
-    let that = this;
-
-    var query = wx.createSelectorQuery();
-    创建节点选择器
-     query.select('.selector').boundingClientRect();
-     query.exec(function (res) {
-
-      console.log("高度" + e.detail.scrollHeight/2);
-
-      console.log("滚动位置" + e.detail.scrollTop);
-
-      if ((e.detail.scrollHeight/2) <= e.detail.scrollTop) {
-        that.setData({
-          top: true
-        })
-      }else{
-        that.setData({
-          top: false
-        })
-      }
-
-    })
-  },*/
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //初始化变量
     this.setData({
       selector: app.globalData.selector,
       index: app.globalData.index,
@@ -94,7 +69,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
 
   /**

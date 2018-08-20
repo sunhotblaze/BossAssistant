@@ -16,32 +16,32 @@ Page({
     endMonth: {}
   },
   /**
-   * 选择器 绑定更改
+   * 店铺选择器 绑定更改
    */
   bindPickerChange: function (e) {
     app.overallBindPickerChange(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
   /**
-   * 点击时间选择器
+   * 时间选择器 绑定更改
    */
   clickDateSelector: function (e) {
     app.overallSelect(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
   /**
   * 开始月份选择器 绑定更改
   */
   bindStartMonthChange: function (e) {
     app.orerallBindStartMonthChange(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
   /**
    * 结束月份选择器 绑定更改
    */
   bindEndMonthChange: function (e) {
     app.orerallBindEndMonthChange(e);
-    app.overallAssignmentIndex(this);
+    app.overallInitializationVariable(this);
   },
   /**
    * 生命周期函数--监听页面加载

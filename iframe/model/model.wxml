@@ -1,6 +1,6 @@
 <!--iframe/model/model.wxml-->
 
-<template name="addModel">
+<template name="addPurchaseModel">
 <modal hidden="{{hiddenmodalput}}" title="新建采购" confirm-text="保存" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
     <view style='padding:20rpx;'>
     <view style='padding:5rpx;'>金额</view>

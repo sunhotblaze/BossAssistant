@@ -1,23 +1,12 @@
 <!--index.wxml-->
 
 <view class='body'>
+
 <import src="/iframe/top/top.wxml"/>
 <template is="selectorAndDateSelector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector,startMonth:startMonth,endMonth:endMonth}}"/>
-<!--
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
--->
+
 <view class='container {{dateIndex == 3 ? "container-change-top" : "container-top"}}'>
+
 <view class='block'>
   <view class='block-title block-border-bottom'>
     <label class='block-title-lable'>
@@ -81,7 +70,7 @@
       </view>
       </view>
       <view class='block-right'>
-        <button class='btn' bindtap='addModel'>新增采购</button>
+        <button class='btn' bindtap='addPurchaseModel'>新增采购</button>
         <button class='btn' bindtap='purchaseBill'>采购账单</button>
       </view>
       </view>
@@ -158,7 +147,7 @@
 </view>
 
 <import src="/iframe/model/model.wxml"/>
-<template is="addModel" data="{{hiddenmodalput}}"/>
+<template is="addPurchaseModel" data="{{hiddenmodalput}}"/>
 
 </view>
 

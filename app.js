@@ -49,6 +49,9 @@ App({
     })*/
 
   },
+  /**
+   * 初始化全局变量
+   */
   globalData: {
     selector: [{ id: 1, value: '全部' }, { id: 2, value: '长沙' }],
     dateSelector: [{ id: 1, value: '本日' },],
@@ -57,29 +60,32 @@ App({
     startMonth: '2017-05',
     endMonth: {},
   },
-  overallAssignmentIndex: function (that){
-    // 修改选择索引
+  /**
+   * 初始化全局变量
+   */
+  overallInitializationVariable: function (that){
+    // 初始化店铺选择索引
     if (that.data.index != this.globalData.index){
       that.data.index = this.globalData.index;
       that.setData({
         index: that.data.index
       })
     }
-    // 修改选择时间索引
+    // 初始化时间导航索引
     if (that.data.dateIndex != this.globalData.dateIndex){
       that.data.dateIndex = this.globalData.dateIndex;
       that.setData({
         dateIndex: that.data.dateIndex
       })
     }
-    // 修改开始绑定月份
+    // 初始化自定义开始月份
     if (that.data.startMonth != this.globalData.startMonth){
       that.data.startMonth = this.globalData.startMonth;
       that.setData({
         startMonth: that.data.startMonth
       })
     }
-    // 修改结束绑定月份
+    // 初始化自定义结束月份
     if (that.data.endMonth != this.globalData.endMonth) {
       that.data.endMonth = this.globalData.endMonth;
       that.setData({
@@ -87,24 +93,28 @@ App({
       })
     }
   },
+  // 修改全局绑定店铺索引
   overallBindPickerChange:function(e){
     console.log(this.globalData.selector[e.detail.value].value);
     if (this.globalData.index != e.detail.value){
       this.globalData.index = e.detail.value;
     }
   },
+  // 修改全局时间导航索引
   overallSelect:function(e){
     console.log(this.globalData.dateSelector[e.currentTarget.dataset.index].value);
     if (this.globalData.dateIndex != e.currentTarget.dataset.index) {
       this.globalData.dateIndex = e.currentTarget.dataset.index;
     }
   },
+  // 修改全局自定义启动绑定月份
   orerallBindStartMonthChange:function(e){
     console.log(e.detail.value);
     if (this.globalData.startMonth != e.detail.value){
       this.globalData.startMonth = e.detail.value;
     }
   },
+  // 修改全局自定义结束绑定月份
   orerallBindEndMonthChange:function(e){
     console.log(e.detail.value);
     if (this.globalData.startMonth > e.detail.value){
