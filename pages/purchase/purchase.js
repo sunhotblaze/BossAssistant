@@ -1,4 +1,4 @@
-// pages/main/main.js
+// pages/purchase/purchase.js
 //获取应用实例
 const app = getApp()
 
@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    selector:[],
+    selector: [],
     index: {},
     dateIndex: {},
     dateSelector: [],
@@ -18,7 +18,7 @@ Page({
   /**
    * 选择器 绑定更改
    */
-  bindPickerChange:function(e){
+  bindPickerChange: function (e) {
     app.overallBindPickerChange(e);
     app.overallAssignmentIndex(this);
   },
@@ -43,32 +43,6 @@ Page({
     app.orerallBindEndMonthChange(e);
     app.overallAssignmentIndex(this);
   },
-  /*scrollTopFun:function(e){
-
-    let that = this;
-
-    var query = wx.createSelectorQuery();
-    创建节点选择器
-     query.select('.selector').boundingClientRect();
-     query.exec(function (res) {
-
-      console.log("高度" + e.detail.scrollHeight/2);
-
-      console.log("滚动位置" + e.detail.scrollTop);
-
-      if ((e.detail.scrollHeight/2) <= e.detail.scrollTop) {
-        that.setData({
-          top: true
-        })
-      }else{
-        that.setData({
-          top: false
-        })
-      }
-
-    })
-  },*/
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -87,14 +61,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    app.overallAssignmentIndex(this);
+  
   },
 
   /**

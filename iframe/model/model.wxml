@@ -1,0 +1,15 @@
+<!--iframe/model/model.wxml-->
+
+<template name="addModel">
+<modal hidden="{{hiddenmodalput}}" title="新建采购" confirm-text="保存" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <view style='padding:20rpx;'>
+    <view style='padding:5rpx;'>金额</view>
+      <input type='digit' placeholder="请输入金额" class='digit'/>
+    </view>
+    <view style='padding:20rpx;'>
+    <view style='padding:5rpx;'>备注</view>
+      <textarea placeholder="请输入备注" fixed='true' class='textarea'/>
+    </view>
+</modal>
+</template>
+

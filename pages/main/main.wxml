@@ -3,9 +3,9 @@
 <view class='body'>
 
 <import src="/iframe/top/top.wxml"/>
-<template is="selector" data="{{selector: selector,index:index}}"/>
+<template is="selectorAndDateSelector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector,startMonth:startMonth,endMonth:endMonth}}"/>
 
-<view class='container container-top'>
+<view class='container {{dateIndex == 3 ? "container-change-top" : "container-top"}}'>
 
 <view class='block'>
   <view class='block-title block-border-bottom'>
@@ -17,26 +17,6 @@
   <view class='block-body block-border-bottom'>
   <label class='lab-title'>客单流量</label>
   <view class='content-view'></view>
-  </view>
-</view>
-
-<view class='block'>
-  <view class='block-title block-border-bottom'>
-    <label class='block-title-lable'>
-      <image class='title-icon icon-left' src='/images/customer.png'></image>
-        客户监控
-      </label>
-  </view>
-</view>
-
-
-
-<view class='block'>
-  <view class='block-title block-border-bottom'>
-    <label class='block-title-lable'>
-      <image class='title-icon icon-left' src='/images/trend.png'></image>
-        营业走势图
-      </label>
   </view>
 </view>
 

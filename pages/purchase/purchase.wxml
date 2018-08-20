@@ -1,0 +1,59 @@
+<!--pages/purchase/purchase.wxml-->
+<view class='body'>
+<import src="/iframe/top/top.wxml"/>
+<template is="selectorAndDateSelector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector,startMonth:startMonth,endMonth:endMonth}}"/>
+
+<view class='container {{dateIndex == 3 ? "container-change-top" : "container-top"}}'>
+<view class='block'>
+<view class='table'>
+<view class='tr block-border-bottom'>
+    <view class='th'>
+      #
+    </view>
+    <view class='th'>
+      采购时间
+    </view>
+    <view class='th'>
+      采购金额
+    </view>
+  </view>
+  <view class='block-border-bottom'>
+  <view class='tr'>
+    <view class='td'>
+      1
+    </view>
+    <view class='td'>
+      2018/08/13
+    </view>
+    <view class='td'>
+     1000
+    </view>
+  </view>
+  <view class='tr'>
+      <view class='td'>
+        测试一下
+      </view>
+  </view>
+  </view>
+  <view>
+  <view class='tr'>
+    <view class='td'>
+      2
+    </view>
+    <view class='td'>
+      2018/08/14
+    </view>
+    <view class='td'>
+     1000
+    </view>
+  </view>
+  <view class='tr'>
+      <view class='td'>
+        测试一下1111111111111111111111111111111111111
+      </view>
+  </view>
+  </view>
+</view>
+</view>
+</view>
+</view>

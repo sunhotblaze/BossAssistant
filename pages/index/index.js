@@ -4,14 +4,13 @@ const app = getApp()
 
 Page({
   data: {
-    /*motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),*/
     selector:[],
     index: {},
     dateIndex: {},
-    dateSelector: []
+    dateSelector: [],
+    startMonth:{},
+    endMonth:{},
+    hiddenmodalput:true
   },
   onLoad: function () {
 
@@ -19,7 +18,9 @@ Page({
       selector: app.globalData.selector,
       index: app.globalData.index,
       dateIndex: app.globalData.dateIndex,
-      dateSelector: app.globalData.dateSelector
+      dateSelector: app.globalData.dateSelector,
+      startMonth: app.globalData.startMonth,
+      endMonth: app.globalData.endMonth
     })
   /*
     if (app.globalData.userInfo) {
@@ -74,8 +75,39 @@ Page({
   /**
    * 点击时间选择器
    */
-  click:function(e){
+  clickDateSelector:function(e){
     app.overallSelect(e);
     app.overallAssignmentIndex(this);
+  },
+  /**
+   * 开始月份选择器 绑定更改
+   */
+  bindStartMonthChange:function(e){
+    app.orerallBindStartMonthChange(e);
+    app.overallAssignmentIndex(this);
+  },
+  /**
+   * 结束月份选择器 绑定更改
+   */
+  bindEndMonthChange:function(e){
+    app.orerallBindEndMonthChange(e);
+    app.overallAssignmentIndex(this);
+  },
+  addModel:function(e){
+    this.data.hiddenmodalput=false;
+    this.setData({
+      hiddenmodalput:this.data.hiddenmodalput
+    })
+  },
+  cancel:function(e){
+    this.data.hiddenmodalput = true;
+    this.setData({
+      hiddenmodalput: this.data.hiddenmodalput
+    })
+  },
+  purchaseBill:function(e){
+    wx.navigateTo({
+      url:"../purchase/purchase"
+    })
   }
 })

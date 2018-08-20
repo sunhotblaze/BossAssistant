@@ -4,35 +4,40 @@
     "pages/index/index",
     "pages/my/my",
     "pages/logs/logs",
-    "iframe/top/top"
+    "iframe/top/top",
+    "iframe/model/model",
+    "pages/purchase/purchase"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "老板管理",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh":true
+    "enablePullDownRefresh": true
   },
-  "tabBar":{
-    "borderStyle":"white",
-    "backgroundColor":"#F5F5F5",
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#F5F5F5",
     "selectedColor": "#1296db",
-    "list":[{
-      "pagePath":"pages/main/main",
-      "text":"营销监控",
-      "iconPath":"images/monitor.png",
-      "selectedIconPath":"images/monitor-check.png"
-    },
-    {
-      "pagePath":"pages/index/index",
-      "text":"数据分析",
-      "iconPath": "images/data-analysis.png",
-      "selectedIconPath": "images/data-analysis-check.png"
-    },{
-      "pagePath":"pages/my/my",
-      "text":"我的",
-      "iconPath": "images/my.png",
-      "selectedIconPath": "images/my-check.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "数据分析",
+        "iconPath": "images/data-analysis.png",
+        "selectedIconPath": "images/data-analysis-check.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "会员管理",
+        "iconPath": "images/vip.png",
+        "selectedIconPath": "images/vip-check.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-check.png"
+      }
+    ]
   }
 }

@@ -2,7 +2,7 @@
 
 <view class='body'>
 <import src="/iframe/top/top.wxml"/>
-<template is="selectorAndDateSelector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector}}"/>
+<template is="selectorAndDateSelector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector,startMonth:startMonth,endMonth:endMonth}}"/>
 <!--
 <view class="container">
   <view class="userinfo">
@@ -17,7 +17,7 @@
   </view>
 </view>
 -->
-<view class='container {{dateIndex == 4 ? "container-change-top" : "container-top"}}'>
+<view class='container {{dateIndex == 3 ? "container-change-top" : "container-top"}}'>
 <view class='block'>
   <view class='block-title block-border-bottom'>
     <label class='block-title-lable'>
@@ -28,45 +28,137 @@
   <view class='block-body block-border-bottom'>
     <label class='h4'>零销</label>
     <view class='block-content'>
-      <view class='block-left'>
-        数量
-        <label></label>
+      <view class='block-left display-flex'>
+      <view class='label-left'>
+      成交量
       </view>
-      <view class='block-right'>
-        金额
+      <view class='label-right'>
+      0
+      </view>
+      </view>
+      <view class='block-right display-flex'>
+        <view class='label-left'>
+      金额
+      </view>
+      <view class='label-right'>
+      0
+      </view>
       </view>
     </view>
   </view>
-  <view class='block-bottom'>
-    <label class='h4'>会员</label>
+  
+  <view class='block-body block-border-bottom'>
+    <label class='h4'>会员消费</label>
     <view class='block-content'>
-      <view class='block-left'>
-        新增
-        <label></label>
+      <view class='block-left display-flex'>
+      <view class='label-left'>
+      成交量
       </view>
-      <view class='block-right'>
-        消费
+      <view class='label-right'>
+      0
+      </view>
+      </view>
+      <view class='block-right display-flex'>
+        <view class='label-left'>
+      金额
+      </view>
+      <view class='label-right'>
+      0
+      </view>
       </view>
     </view>
   </view>
+
+  <view class='block-body block-border-bottom'>
+    <label class='h4'>采购</label>
+    <view class='block-content' style='height: 170rpx;'>
+    <view class='block-left display-flex' style='padding-top: 10%;padding-bottom: 10%;'>
+      <view class='label-left'>
+      采购金额
+      </view>
+      <view class='label-right'>
+      0
+      </view>
+      </view>
+      <view class='block-right'>
+        <button class='btn' bindtap='addModel'>新增采购</button>
+        <button class='btn' bindtap='purchaseBill'>采购账单</button>
+      </view>
+      </view>
+  </view>
+
+   <view class='block-bottom'>
+    <view class='table'>
+    <view class='tr'>
+    <view class='td h4'>
+      利润
+    </view>
+    <view class='td'>
+    ￥
+    0
+    </view>
+    </view>
+    </view>
+  </view>
+
 </view>
 
 <view class='block'>
   <view class='block-title block-border-bottom'>
     <label class='block-title-lable'>
       <image class='title-icon icon-left' src='/images/sale.png'></image>
-        销售分析
+        销售排行
       </label>
   </view>
-</view>
-<view class='block'>
-  <view class='block-title block-border-bottom'>
-    <label class='block-title-lable'>
-      <image class='title-icon icon-left' src='/images/vip.png'></image>
-        会员分析
-      </label>
+  <view class='table'>
+  <view class='tr block-border-bottom'>
+    <view class='th'>
+    #
+    </view>
+    <view class='th'>
+    商品名称
+    </view>
+    <view class='th'>
+    金额
+    </view>
+    <view class='th'>
+    成交量
+    </view>
+  </view>
+    <view class='tr'>
+      <view class='td'>
+        1
+      </view>
+      <view class='td'>
+       提拉米苏
+      </view>
+      <view class='td'>
+       398
+      </view>
+      <view class='td'>
+       59
+      </view>
+    </view>
+    <view class='tr'>
+      <view class='td'>
+        2
+      </view>
+      <view class='td'>
+       抹茶蛋糕
+      </view>
+      <view class='td'>
+       29900000
+      </view>
+      <view class='td'>
+       43000000
+      </view>
+    </view>
   </view>
 </view>
 </view>
 
+<import src="/iframe/model/model.wxml"/>
+<template is="addModel" data="{{hiddenmodalput}}"/>
+
 </view>
+

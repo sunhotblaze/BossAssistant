@@ -1,11 +1,5 @@
 /* pages/main/main.wxss */
 
-.container-top{
-  margin-top: 100rpx;
-}
-.content-view{
- height :auto;
-}
 .lab-title{
   font-size: 28rpx;
   color: black;

@@ -1,23 +1,33 @@
 //app.js
+
+//logs.js
+const util = require('/utils/util.js')
+
 App({
   onLaunch: function () {
 
     this.globalData.selector = this.globalData.selector.concat({ id: 3, value: '北京' });
 
-    this.globalData.dateSelector = this.globalData.dateSelector.concat({ id: 3, value: '本月' }, { id: 4, value:'本季度' },{id:5,value:'自定义'})
+    this.globalData.dateSelector = this.globalData.dateSelector.concat({ id: 2, value: '本月' }, { id: 3, value:'本季度' },{id:4,value:'自定义'})
 
-    // 展示本地存储能力
+    this.globalData.endMonth = util.formatTime(new Date());
+
+    this.globalData.startMonth = util.lastMonth(new Date());
+
+    
+
+    /* 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    // 登录
+     登录
     wx.login({
       success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+         发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
-    // 获取用户信息
+     获取用户信息
     wx.getSetting({
       success: res => {
         if (res.authSetting['scope.userInfo']) {
@@ -36,15 +46,16 @@ App({
           })
         }
       }
-    })
+    })*/
+
   },
   globalData: {
-    userInfo: null,
     selector: [{ id: 1, value: '全部' }, { id: 2, value: '长沙' }],
-    dateSelector: [{ id: 1, value: '本日' }, { id: 2, value: '本周' }],
+    dateSelector: [{ id: 1, value: '本日' },],
     index:0,
-    dateIndex:0
-    
+    dateIndex:0,
+    startMonth: '2017-05',
+    endMonth: {},
   },
   overallAssignmentIndex: function (that){
     // 修改选择索引
@@ -61,6 +72,20 @@ App({
         dateIndex: that.data.dateIndex
       })
     }
+    // 修改开始绑定月份
+    if (that.data.startMonth != this.globalData.startMonth){
+      that.data.startMonth = this.globalData.startMonth;
+      that.setData({
+        startMonth: that.data.startMonth
+      })
+    }
+    // 修改结束绑定月份
+    if (that.data.endMonth != this.globalData.endMonth) {
+      that.data.endMonth = this.globalData.endMonth;
+      that.setData({
+        endMonth: that.data.endMonth
+      })
+    }
   },
   overallBindPickerChange:function(e){
     console.log(this.globalData.selector[e.detail.value].value);
@@ -72,6 +97,22 @@ App({
     console.log(this.globalData.dateSelector[e.currentTarget.dataset.index].value);
     if (this.globalData.dateIndex != e.currentTarget.dataset.index) {
       this.globalData.dateIndex = e.currentTarget.dataset.index;
+    }
+  },
+  orerallBindStartMonthChange:function(e){
+    console.log(e.detail.value);
+    if (this.globalData.startMonth != e.detail.value){
+      this.globalData.startMonth = e.detail.value;
+    }
+  },
+  orerallBindEndMonthChange:function(e){
+    console.log(e.detail.value);
+    if (this.globalData.startMonth > e.detail.value){
+      console.log("no")
+    }else{
+      if (this.globalData.endMonth != e.detail.value) {
+        this.globalData.endMonth = e.detail.value;
+      }
     }
   }
 })

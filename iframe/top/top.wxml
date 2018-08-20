@@ -21,14 +21,29 @@
       <image src='/images/drop-down.png' class='selector-icon icon-right'></image>
     </view>
     </picker>
-    <view class='date-selector {{dateIndex==4 ? "date-change-selector" :""}}'>
-      <view class='float-left {{dateIndex==i ? "active":""}}' wx:for='{{dateSelector}}' wx:for-index='i' data-index='{{i}}' bindtap='click' wx:key='value'>
+    <view class='date-selector'>
+      <view class='float-left {{dateIndex==i ? "active":""}}' wx:for='{{dateSelector}}' wx:for-index='i' data-index='{{i}}' bindtap='clickDateSelector' wx:key='value'>
         {{item.value}}
       </view>
    </view>
-   <view class='custom-date-selector {{dateIndex==4 ? "display" :"hide"}}' >
-    <view class='float-left'></view>
-    <view class='float-left'></view>
+   <view class='custom-date-selector {{dateIndex==3 ? "" :"hide"}}' >
+    <view class='float-left'>
+      <picker mode="date" value="{{startMonth}}" start="2015-09" end="2018-09" bindchange="bindStartMonthChange" fields="month">
+         <view>
+          {{startMonth}}
+        </view>
+      </picker>
+    </view>
+    <view class='float-left'>
+    ~
+    </view>
+    <view class='float-left'>
+      <picker mode="date" value="{{endMonth}}" start="2015-09" end="2018-09" bindchange="bindEndMonthChange" fields="month">
+         <view>
+          {{endMonth}}
+        </view>
+      </picker>
+    </view>
    </view>
   </view>
  </view>

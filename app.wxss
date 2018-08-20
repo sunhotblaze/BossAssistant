@@ -7,8 +7,17 @@
   background: #F5F5F5;
 }
 
+.content-view{
+ height :auto;
+}
+.container-top{
+  margin-top: 26%;
+}
+.container-change-top{
+  margin-top: 35%;
+}
+
 .selector{
-  width: 700rpx;
   padding: 35rpx;
   background: #fff;
   font-family:sans-serif;
@@ -17,11 +26,18 @@
 
 .date-selector{
   height:60rpx; 
-  padding-top:40rpx;
+  padding-top:30rpx;
   display: flex;
 }
-.date-change-selector{
-  padding-bottom: 40rpx;
+/**定制时间选择器**/
+.custom-date-selector{
+  padding-top: 30rpx;
+  height: 40rpx;
+  display: flex;
+}
+/**隐藏**/
+.hide{
+  display: none;
 }
 
 .top{
@@ -88,4 +104,20 @@
   font-size: 30rpx;
   color: #1296db;
   margin-left: 15rpx;
+}
+
+.table{
+  width: 100%;
+}
+.tr{
+  width: 100% ;
+  display: flex;
+}
+.th,.td {
+  padding: 20rpx;
+  text-align: center;
+  width: 100%;
+}
+.th {
+  font-weight: 400;
 }
