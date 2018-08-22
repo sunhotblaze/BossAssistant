@@ -5,7 +5,7 @@
     "pages/my/my",
     "pages/logs/logs",
     "iframe/top/top",
-    "iframe/model/model",
+    "iframe/modal/modal",
     "pages/purchase/purchase"
   ],
   "window": {

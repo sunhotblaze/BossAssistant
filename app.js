@@ -54,7 +54,7 @@ App({
    */
   globalData: {
     selector: [{ id: 1, value: '全部' }, { id: 2, value: '长沙' }],
-    dateSelector: [{ id: 1, value: '本日' },],
+    dateSelector: [{ id: 1, value: '本日' }],
     index:0,
     dateIndex:0,
     startMonth: '2017-05',

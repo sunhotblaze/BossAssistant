@@ -146,8 +146,8 @@
 </view>
 </view>
 
-<import src="/iframe/model/model.wxml"/>
-<template is="addPurchaseModel" data="{{hiddenmodalput}}"/>
+<import src="/iframe/modal/modal.wxml"/>
+<template is="addPurchaseModal" data="{{hiddenmodalput}}"/>
 
 </view>
 
