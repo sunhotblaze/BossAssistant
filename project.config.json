@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "9.9.9",
 	"appid": "wx5c129f798cee7197",
-	"projectname": "BoosAdministration",
+	"projectname": "BossAssistant",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
