@@ -1,11 +1,11 @@
 <!--index.wxml-->
 
-<view class='body'>
+<view class='body body-top'>
 
 <import src="/iframe/top/top.wxml"/>
 <template is="selectorAndDateSelector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector,startMonth:startMonth,endMonth:endMonth}}"/>
 
-<view class='container {{dateIndex == 3 ? "container-change-top" : "container-top"}}'>
+<view class='container {{dateIndex == 3 ? "container-change-top" : ""}}'>
 
 <view class='block'>
   <view class='block-title block-border-bottom'>

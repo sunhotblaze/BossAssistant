@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/main/main",
+    "pages/vipView/vipView",
     "pages/my/my",
     "pages/logs/logs",
     "iframe/top/top",
@@ -27,7 +27,7 @@
         "selectedIconPath": "images/data-analysis-check.png"
       },
       {
-        "pagePath": "pages/main/main",
+        "pagePath": "pages/vipView/vipView",
         "text": "会员管理",
         "iconPath": "images/vip.png",
         "selectedIconPath": "images/vip-check.png"

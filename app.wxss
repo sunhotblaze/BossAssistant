@@ -1,5 +1,6 @@
 /**app.wxss**/
 
+
 .body{
   display: flex;
   flex-direction: column;
@@ -7,14 +8,16 @@
   background: #F5F5F5;
 }
 
+.body-top{
+  margin-top: 26%;
+}
+
 .content-view{
  height :auto;
 }
-.container-top{
-  margin-top: 26%;
-}
+
 .container-change-top{
-  margin-top: 35%;
+  margin-top: 10%;
 }
 
 .selector{
@@ -77,11 +80,11 @@
 }
 
 .container{
- width: 95%;
+ width: 96%;
 }
 
 .block{
-  margin-top:20rpx;
+  margin-top:12rpx;
   padding: 15rpx;
   background:white;
   border:1rpx solid #DCDCDC;

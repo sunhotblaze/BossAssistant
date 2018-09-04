@@ -1,1 +1,31 @@
 /* pages/my/my.wxss */
+
+.flex-block{
+  display: flex;
+}
+.user-info{
+  background: white;
+  margin-top: 12rpx;
+  margin-bottom: 12rpx;
+  border-radius: 20rpx;
+  border: 1px solid #DCDCDC;
+}
+.head-protrait{
+  height: 135rpx;
+  width: 100%;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  font-size: 25rpx;
+
+}
+.head-image{
+  border: 1px solid #DCDCDC;
+  height:110rpx;
+  width:110rpx;
+  border-radius: 50%;
+  margin: 10rpx;
+}
+.user-menu{
+  flex: 1;
+}

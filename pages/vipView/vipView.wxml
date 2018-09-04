@@ -1,0 +1,57 @@
+<!--pages/main/main.wxml-->
+
+<view class='body body-top'>
+
+  <import src="/iframe/top/top.wxml" />
+  <template is="selector" data="{{selector: selector,index:index,dateIndex:dateIndex,dateSelector:dateSelector,startMonth:startMonth,endMonth:endMonth}}" />
+
+  <view class='container'>
+
+    <view class='block flex-block vipcount'>
+      <view class='cb cbleft'>
+        <view class='block-left'>本店会员</view>
+        <view class='block-right'>999</view>
+      </view>
+      <view class='cb '>
+        <view class='block-left'>储值余额</view>
+        <view class='block-right'>￥2773</view>
+      </view>
+    </view>
+
+    <view class='listbox'>
+      <view class='flex-block utilbar' uti>
+
+        <view class='cb'>
+          <input type='text' value='' class='vipsearch' placeholder='搜索：昵称/手机号/姓名'></input>
+        </view>
+        <view class='cb'>
+          <picker range='{{vipsortoption}}'  value='{{sortoptionindex}}'  range-key='value' mode='selector' bindchange='vipsortoptionchange'>
+          <view>{{vipsortoption[sortoptionindex].value}}
+           <image src='/images/drop-down.png' class='selector-icon icon-right'></image>
+          </view>
+          </picker>
+        </view>
+
+
+      </view>
+      <scroll-view class='listcontent' scroll-y='ture' bindscrolltolower='scrolltolower'>
+       <view class='listcontenthead'>
+       <view class='b1 b'>#</view>
+       <view class='b2 b'>昵称</view>
+       <view class='b3 b'>余额</view>
+       <view class='b4 b'>最近活动</view>
+       <view class='b5 b'>操作</view>
+       </view>
+       <view class='flex-block listcolor' wx:for='{{testUsers}}' wx:key='unique' >
+        <view class='b b1'>{{item.num}}</view>
+        <view class='b b2'>{{item.name}}</view>
+        <view class='b b3'>{{item.money}}</view>
+        <view class='b b4'>{{item.neartime}}</view>
+        <view class='b b5'>详情</view>
+       </view>
+      </scroll-view>
+    </view>
+
+  </view>
+
+</view>

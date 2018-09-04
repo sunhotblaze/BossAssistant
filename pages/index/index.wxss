@@ -1,5 +1,6 @@
 /**index.wxss**/
 
+
 .block-body{
   padding: 20rpx;
   padding-bottom: 10rpx;
